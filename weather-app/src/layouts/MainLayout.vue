@@ -1,5 +1,6 @@
 <template>
   <q-layout view="hHh lpR lFf">
+
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -13,9 +14,9 @@
 
         <q-toolbar-title>
           <div class="absolute-center">
-          <q-icon name="sunny"></q-icon>
-          Weather App
-        </div>
+            <q-icon name="sunny"></q-icon>
+            Weather App
+          </div>
         </q-toolbar-title>
 
       </q-toolbar>
@@ -23,11 +24,13 @@
 
     <q-drawer
       v-model="leftDrawerOpen"
+      class="bg-primary"
       show-if-above
       bordered
     >
       <q-list>
         <q-item-label
+        class="text-white"
           header
         >
           Essential Links
